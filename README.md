@@ -7,7 +7,7 @@ $`E[y \mid \vx] = g(\vw \vx + \epsilon)`$
 
 where $'\epsilon'$ is a noise term, usually taken to be Gaussian.  
 This ``link function`` allows you to model inherently non-linear data with a linear model. In the case of logistic regression, the link function is the logistic function:  
-$`g(z) = \frac{1}{1 + e^{-z}}`$
+$$g(z) = \frac{1}{1 + e^{-z}}$$
 
 ## Requirement
 * Python 3  
