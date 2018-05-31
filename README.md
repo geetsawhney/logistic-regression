@@ -1,5 +1,16 @@
 # logistic-regression
-This repository contains the implementation of logistic regression in python.
+This repository contains the implementation of logistic regression in python.  
+The logistic regression model is used to model binary classification data.
+Logistic regression is a special case of generalized linear regression where the labels $Y$ are modeled as a linear combination of the data $X$, but in a transformed space specified by $g$, sometimes called the ``link function":
+\begin{equation}
+E[y \mid \vx] = g(\vw \vx + \epsilon)
+\end{equation}
+where $\epsilon$ is a noise term, usually taken to be Gaussian.\\
+\\
+This ``link function" allows you to model inherently non-linear data with a linear model. In the case of logistic regression, the link function is the logistic function:
+\begin{equation}
+g(z) = \frac{1}{1 + e^{-z}}
+\end{equation}
 
 ## Requirement
 * Python 3  
@@ -10,7 +21,7 @@ This repository contains the implementation of logistic regression in python.
 * Install packages as specified in requirements.txt  
 ```pip3 install -r requirements.txt```  
 * Optional: Deactivate the virtual environment, returning to your system's setup.  
-```deactivate```
+```deactivate```  
 in the directory where you have created the virtual environment.
 * To run in train mode  
 ```	python3 classify.py --mode train --algorithm algorithm_name --model-file model_file --data train_file```
