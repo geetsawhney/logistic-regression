@@ -1,16 +1,12 @@
 # logistic-regression
 This repository contains the implementation of logistic regression in python.  
 The logistic regression model is used to model binary classification data.
-Logistic regression is a special case of generalized linear regression where the labels $Y$ are modeled as a linear combination of the data $X$, but in a transformed space specified by $g$, sometimes called the ``link function":
-\begin{equation}
-E[y \mid \vx] = g(\vw \vx + \epsilon)
-\end{equation}
-where $\epsilon$ is a noise term, usually taken to be Gaussian.\\
-\\
-This ``link function" allows you to model inherently non-linear data with a linear model. In the case of logistic regression, the link function is the logistic function:
-\begin{equation}
-g(z) = \frac{1}{1 + e^{-z}}
-\end{equation}
+Logistic regression is a special case of generalized linear regression where the labels $Y$ are modeled as a linear combination of the data $X$, but in a transformed space specified by $g$, sometimes called the ``link function``:
+$E[y \mid \vx] = g(\vw \vx + \epsilon)$
+
+where $\epsilon$ is a noise term, usually taken to be Gaussian.  
+This ``link function`` allows you to model inherently non-linear data with a linear model. In the case of logistic regression, the link function is the logistic function:  
+$g(z) = \frac{1}{1 + e^{-z}}$
 
 ## Requirement
 * Python 3  
