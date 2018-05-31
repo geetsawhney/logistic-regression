@@ -1,32 +1,29 @@
 # logistic-regression
 
 ## Requirement
-* Python 3
-* Create a new virtual environment.
+* Python 3  
+* Create a new virtual environment.  
 ```python3 -m venv <name of environment>```
-* Activate the virtual environment.
+* Activate the virtual environment.  
 ```source <name of environment>/bin/activate```
-* Install packages as specified in requirements.txt.
-```pip3 install -r requirements.txt```
-* Optional: Deactivate the virtual environment, returning to your system's setup.
+* Install packages as specified in requirements.txt  
+```pip3 install -r requirements.txt```  
+* Optional: Deactivate the virtual environment, returning to your system's setup.  
 ```deactivate```
 in the directory where you have created the virtual environment.
-* To run in train mode
+* To run in train mode  
 ```	python3 classify.py --mode train --algorithm algorithm_name --model-file model_file --data train_file```
-* To run in test mode
-```python3 classify.py --mode test --model-file model_file --data test_file --predictions-file predictions_file```
+* To run in test mode  
+```python3 classify.py --mode test --model-file model_file --data test_file --predictions-file predictions_file```  
 
-#### Example
-```python3 classify.py --mode train --algorithm perceptron --model-file speech.perceptron.model --data speech.train```
-To run the trained model on development data:
+#### Example  
+```python3 classify.py --mode train --algorithm perceptron --model-file speech.perceptron.model --data speech.train```  
+To run the trained model on development data:  
 ```python3 classify.py --mode test --model-file speech.perceptron.model --data speech.dev \--predictions-file speech.dev.predictions```
 
 
-
-
-
 ## Data
-The data are provided in what is known as SVM-light format. Each line contains a single example:
+The data are provided in what is known as SVM-light format. Each line contains a single example:  
 ```0 1:-0.2970 2:0.2092 5:0.3348 9:0.3892 25:0.7532 78:0.7280```
 The first entry on the line is the label. The label can be an integer (0/1 for binary classification) or a real valued number (for regression.) The classification label of $-1$ indicates unlabeled. Subsequent entries on the line are features. The entry {\tt 25:0.7532} means that feature $25$ has value $0.7532$. Features are 1-indexed.
 Model predictions are saved as one predicted label per line in the same order as the input data. The code that generates these predictions is provided in the library. The script {\tt compute\_accuracy.py} can be used to evaluate the accuracy of your predictions for classification:
