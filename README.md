@@ -1,8 +1,10 @@
 # logistic-regression
 
 ## Requirement
-* Python 3
-* '''pip install -r requirements.txt'''
+* We will be using Python 3
+* '''
+pip install -r requirements.txt
+'''
 
 
 ## Data
