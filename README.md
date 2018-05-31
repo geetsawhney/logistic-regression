@@ -1,4 +1,5 @@
 # logistic-regression
+This repository contains the implementation of logistic regression in python.
 
 ## Requirement
 * Python 3  
