@@ -1,10 +1,16 @@
 # logistic-regression
 
 ## Requirement
-* We will be using Python 3
-* '''
-pip install -r requirements.txt
-'''
+* Python 3
+* ```# Create a new virtual environment.
+		python3 -m venv python3-hw1
+		# Activate the virtual environment.
+		source python3-hw1/bin/activate
+		# Install packages as specified in requirements.txt.
+		pip3 install -r requirements.txt
+		# Optional: Deactivate the virtual environment, returning to your system's setup.
+		deactivate``` in the directory where you have created the virtual environment.
+* 
 
 
 ## Data
