@@ -2,15 +2,16 @@
 
 ## Requirement
 * Python 3
-* ```# Create a new virtual environment.
-		python3 -m venv python3-hw1
+* # Create a new virtual environment.
+		```python3 -m venv <name of environment>```
 		# Activate the virtual environment.
-		source python3-hw1/bin/activate
+		```source <name of environment>/bin/activate```
 		# Install packages as specified in requirements.txt.
-		pip3 install -r requirements.txt
+		```pip3 install -r requirements.txt```
 		# Optional: Deactivate the virtual environment, returning to your system's setup.
-		deactivate``` in the directory where you have created the virtual environment.
-* 
+		deactivate
+		in the directory where you have created the virtual environment.
+* To
 
 
 ## Data
